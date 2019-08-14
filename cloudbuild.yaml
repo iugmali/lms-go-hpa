@@ -12,5 +12,3 @@ steps:
 
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '--tag=iugmali/lms-go-hpa', '.']
-
-  images: ['gcr.io/$PROJECT_ID/lms-go-hpa']
