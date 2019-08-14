@@ -1,0 +1,22 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: go-hpa
+spec:
+  template:
+    metadata:
+      labels:
+        app: go-hpa
+
+    spec:
+      containers:
+
+        - name: lms-desafio-go
+          image: iugmali/lms-go-hpa
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: "50m"
+            limits:
+              cpu: "100m"
