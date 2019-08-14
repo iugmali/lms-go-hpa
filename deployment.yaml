@@ -12,7 +12,7 @@ spec:
       containers:
 
         - name: go-hpa
-          image: iugmali/lms-go-hpa
+          image: iugmali/go-hpa
           ports:
             - containerPort: 80
           resources:
