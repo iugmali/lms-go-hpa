@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
 
-        - name: lms-desafio-go
+        - name: go-hpa
           image: iugmali/lms-go-hpa
           ports:
             - containerPort: 80
